@@ -5,6 +5,7 @@ public class Snake_Ladder{
 		int roll = 0;
 		int score;
 		//System.out.println(score);
+		while(position<=100){
 		int run =(int) Math.floor(Math.random()*10)%3;
 		switch(run){
 		case 1:
@@ -24,7 +25,7 @@ public class Snake_Ladder{
 		default:
 			System.out.println("No chance to play");
 			roll++;
-		}
+		}}
 		System.out.println(position);
                 System.out.println(roll);
 	}
