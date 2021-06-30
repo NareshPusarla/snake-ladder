@@ -15,6 +15,7 @@ public class Snake_Ladder{
 			roll++;
 			if (position>100) 
 				position -= score;
+                	System.out.println(position);
 			break;
 		case 2:
                 	//score = (int) Math.floor(Math.random()*10)%6;
@@ -23,10 +24,11 @@ public class Snake_Ladder{
 			}else {
 			position = 0;
 			}
+                	System.out.println(position);
 			roll++;
 			break;
 		default:
-			//System.out.println("No chance to play");
+			System.out.println("No chance to play");
 			roll++;
 		}
 		}
